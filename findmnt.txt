@@ -1,0 +1,66 @@
+TARGET                                                   SOURCE                                                                               FSTYPE   OPTIONS
+/                                                        overlay                                                                              overlay  rw,relatime,lowerdir=/var/lib/docker/overlay2/l/XXG2SYJXUWODT4SSP5XSMJ4LSX:/v
+|-/proc                                                  proc                                                                                 proc     rw,nosuid,nodev,noexec,relatime
+| |-/proc/bus                                            proc[/bus]                                                                           proc     ro,nosuid,nodev,noexec,relatime
+| |-/proc/fs                                             proc[/fs]                                                                            proc     ro,nosuid,nodev,noexec,relatime
+| |-/proc/irq                                            proc[/irq]                                                                           proc     ro,nosuid,nodev,noexec,relatime
+| |-/proc/sys                                            proc[/sys]                                                                           proc     ro,nosuid,nodev,noexec,relatime
+| |-/proc/acpi                                           tmpfs                                                                                tmpfs    ro,relatime
+| |-/proc/kcore                                          tmpfs[/null]                                                                         tmpfs    rw,nosuid,size=65536k,mode=755
+| |-/proc/keys                                           tmpfs[/null]                                                                         tmpfs    rw,nosuid,size=65536k,mode=755
+| `-/proc/timer_list                                     tmpfs[/null]                                                                         tmpfs    rw,nosuid,size=65536k,mode=755
+|-/dev                                                   tmpfs                                                                                tmpfs    rw,nosuid,size=65536k,mode=755
+| |-/dev/console                                         devpts[/0]                                                                           devpts   rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666
+| |-/dev/pts                                             devpts                                                                               devpts   rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666
+| |-/dev/mqueue                                          mqueue                                                                               mqueue   rw,nosuid,nodev,noexec,relatime
+| |-/dev/shm                                             shm                                                                                  tmpfs    rw,nosuid,nodev,noexec,relatime,size=65536k
+| `-/dev/dxg                                             none[/dxg]                                                                           devtmpfs ro,nosuid,noexec,relatime,size=8161048k,nr_inodes=2040262,mode=755
+|-/sys                                                   sysfs                                                                                sysfs    ro,nosuid,nodev,noexec,relatime
+| |-/sys/firmware                                        tmpfs                                                                                tmpfs    ro,relatime
+| `-/sys/fs/cgroup                                       tmpfs                                                                                tmpfs    rw,nosuid,nodev,noexec,relatime,mode=755
+|   |-/sys/fs/cgroup/cpuset                              cpuset[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]     cgroup   ro,nosuid,nodev,noexec,relatime,cpuset
+|   |-/sys/fs/cgroup/cpu                                 cpu[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]        cgroup   ro,nosuid,nodev,noexec,relatime,cpu
+|   |-/sys/fs/cgroup/cpuacct                             cpuacct[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]    cgroup   ro,nosuid,nodev,noexec,relatime,cpuacct
+|   |-/sys/fs/cgroup/blkio                               blkio[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]      cgroup   ro,nosuid,nodev,noexec,relatime,blkio
+|   |-/sys/fs/cgroup/memory                              memory[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]     cgroup   ro,nosuid,nodev,noexec,relatime,memory
+|   |-/sys/fs/cgroup/devices                             devices[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]    cgroup   ro,nosuid,nodev,noexec,relatime,devices
+|   |-/sys/fs/cgroup/freezer                             freezer[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]    cgroup   ro,nosuid,nodev,noexec,relatime,freezer
+|   |-/sys/fs/cgroup/net_cls                             net_cls[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]    cgroup   ro,nosuid,nodev,noexec,relatime,net_cls
+|   |-/sys/fs/cgroup/perf_event                          perf_event[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a] cgroup   ro,nosuid,nodev,noexec,relatime,perf_event
+|   |-/sys/fs/cgroup/net_prio                            net_prio[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]   cgroup   ro,nosuid,nodev,noexec,relatime,net_prio
+|   |-/sys/fs/cgroup/hugetlb                             hugetlb[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]    cgroup   ro,nosuid,nodev,noexec,relatime,hugetlb
+|   |-/sys/fs/cgroup/pids                                pids[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]       cgroup   ro,nosuid,nodev,noexec,relatime,pids
+|   |-/sys/fs/cgroup/rdma                                rdma[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]       cgroup   ro,nosuid,nodev,noexec,relatime,rdma
+|   |-/sys/fs/cgroup/misc                                misc[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]       cgroup   ro,nosuid,nodev,noexec,relatime,misc
+|   `-/sys/fs/cgroup/systemd                             cgroup[/docker/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a]     cgroup   ro,nosuid,nodev,noexec,relatime,xattr,name=systemd
+|-/etc/resolv.conf                                       /dev/sde[/data/docker/containers/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a/resolv.conf]
+|                                                                                                                                             ext4     rw,relatime,discard,errors=remount-ro,data=ordered
+|-/etc/hostname                                          /dev/sde[/data/docker/containers/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a/hostname]
+|                                                                                                                                             ext4     rw,relatime,discard,errors=remount-ro,data=ordered
+|-/etc/hosts                                             /dev/sde[/data/docker/containers/24f6861f301e18889680abbcbd09c3ec1dcc23029074e0b7c20aa3924de0dc3a/hosts]
+|                                                                                                                                             ext4     rw,relatime,discard,errors=remount-ro,data=ordered
+|-/usr/src/app                                           drvfs[/Users/Aleks/CLionProjects/cuda_test]                                          9p       rw,noatime,dirsync,aname=drvfs;path=C:\;uid=1000;gid=1000;symlinkroot=/mnt/,m
+|-/usr/bin/nvidia-smi                                    none[/nv_dispi.inf_amd64_d3828c822366e497/nvidia-smi]                                9p       ro,nosuid,nodev,noatime,dirsync,aname=drivers;fmask=222;dmask=222,mmap,access
+|-/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1            none[/libnvidia-ml.so.1]                                                             overlay  ro,nosuid,nodev,relatime,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/
+|-/usr/lib/x86_64-linux-gnu/libcuda.so.1                 none[/libcuda.so.1]                                                                  overlay  ro,nosuid,nodev,relatime,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/
+|-/usr/lib/x86_64-linux-gnu/libcudadebugger.so.1         none[/libcudadebugger.so.1]                                                          overlay  ro,nosuid,nodev,relatime,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/
+|-/usr/lib/x86_64-linux-gnu/libdxcore.so                 none[/libdxcore.so]                                                                  overlay  ro,nosuid,nodev,relatime,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/
+|-/usr/lib/x86_64-linux-gnu/libcuda.so.535.54.03         overlay[/usr/local/cuda-12.2/compat/libcuda.so.535.54.03]                            overlay  ro,nosuid,nodev,relatime,lowerdir=/var/lib/docker/overlay2/l/XXG2SYJXUWODT4SS
+|-/usr/lib/x86_64-linux-gnu/libcudadebugger.so.535.54.03 overlay[/usr/local/cuda-12.2/compat/libcudadebugger.so.535.54.03]                    overlay  ro,nosuid,nodev,relatime,lowerdir=/var/lib/docker/overlay2/l/XXG2SYJXUWODT4SS
+|-/usr/lib/x86_64-linux-gnu/libnvidia-nvvm.so.535.54.03  overlay[/usr/local/cuda-12.2/compat/libnvidia-nvvm.so.535.54.03]                     overlay  ro,nosuid,nodev,relatime,lowerdir=/var/lib/docker/overlay2/l/XXG2SYJXUWODT4SS
+|-/usr/lib/x86_64-linux-gnu/libnvidia-ptxjitcompiler.so.535.54.03
+|                                                        overlay[/usr/local/cuda-12.2/compat/libnvidia-ptxjitcompiler.so.535.54.03]           overlay  ro,nosuid,nodev,relatime,lowerdir=/var/lib/docker/overlay2/l/XXG2SYJXUWODT4SS
+|-/usr/lib/wsl/drivers/nv_dispi.inf_amd64_d3828c822366e497/libcuda.so.1.1
+|                                                        none[/nv_dispi.inf_amd64_d3828c822366e497/libcuda.so.1.1]                            9p       ro,nosuid,nodev,noatime,dirsync,aname=drivers;fmask=222;dmask=222,mmap,access
+|-/usr/lib/wsl/drivers/nv_dispi.inf_amd64_d3828c822366e497/libcuda_loader.so
+|                                                        none[/nv_dispi.inf_amd64_d3828c822366e497/libcuda_loader.so]                         9p       ro,nosuid,nodev,noatime,dirsync,aname=drivers;fmask=222;dmask=222,mmap,access
+|-/usr/lib/wsl/drivers/nv_dispi.inf_amd64_d3828c822366e497/libnvidia-ptxjitcompiler.so.1
+|                                                        none[/nv_dispi.inf_amd64_d3828c822366e497/libnvidia-ptxjitcompiler.so.1]             9p       ro,nosuid,nodev,noatime,dirsync,aname=drivers;fmask=222;dmask=222,mmap,access
+|-/usr/lib/wsl/drivers/nv_dispi.inf_amd64_d3828c822366e497/libnvidia-ml.so.1
+|                                                        none[/nv_dispi.inf_amd64_d3828c822366e497/libnvidia-ml.so.1]                         9p       ro,nosuid,nodev,noatime,dirsync,aname=drivers;fmask=222;dmask=222,mmap,access
+|-/usr/lib/wsl/drivers/nv_dispi.inf_amd64_d3828c822366e497/libnvidia-ml_loader.so
+|                                                        none[/nv_dispi.inf_amd64_d3828c822366e497/libnvidia-ml_loader.so]                    9p       ro,nosuid,nodev,noatime,dirsync,aname=drivers;fmask=222;dmask=222,mmap,access
+|-/usr/lib/wsl/drivers/nv_dispi.inf_amd64_d3828c822366e497/nvidia-smi
+|                                                        none[/nv_dispi.inf_amd64_d3828c822366e497/nvidia-smi]                                9p       ro,nosuid,nodev,noatime,dirsync,aname=drivers;fmask=222;dmask=222,mmap,access
+`-/usr/lib/wsl/drivers/nv_dispi.inf_amd64_d3828c822366e497/nvcubins.bin
+                                                         none[/nv_dispi.inf_amd64_d3828c822366e497/nvcubins.bin]                              9p       ro,nosuid,nodev,noatime,dirsync,aname=drivers;fmask=222;dmask=222,mmap,access

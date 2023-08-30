@@ -1,0 +1,18 @@
+        services:
+          cuda:
+            build:
+              context: .
+              dockerfile: Dockerfile
+              network: host
+            deploy:
+              resources:
+                reservations:
+                  devices:
+                    - driver: nvidia
+                      count: 1
+                      capabilities: [ gpu ]
+            ulimits:
+              stack: 67108864
+              memlock: -1
+            volumes:
+              - .:/usr/src/app

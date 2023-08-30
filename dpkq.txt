@@ -1,0 +1,12 @@
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                          Version      Architecture Description
++++-=============================-============-============-=====================================================
+un  libgldispatch0-nvidia         <none>       <none>       (no description available)
+ii  libnvidia-container-tools     1.13.5-1     amd64        NVIDIA container runtime library (command-line tools)
+ii  libnvidia-container1:amd64    1.13.5-1     amd64        NVIDIA container runtime library
+un  nvidia-container-runtime      <none>       <none>       (no description available)
+un  nvidia-container-runtime-hook <none>       <none>       (no description available)
+ii  nvidia-container-toolkit      1.13.5-1     amd64        NVIDIA Container toolkit
+ii  nvidia-container-toolkit-base 1.13.5-1     amd64        NVIDIA Container Toolkit Base

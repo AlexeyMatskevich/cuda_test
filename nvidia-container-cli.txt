@@ -1,0 +1,110 @@
+-- WARNING, the following logs are for debugging purposes only --
+
+I0830 06:50:37.438787 3850 nvc.c:376] initializing library context (version=1.13.5, build=66607bd046341f7aad7de80a9f022f122d1f2fce)
+I0830 06:50:37.438814 3850 nvc.c:350] using root /
+I0830 06:50:37.438826 3850 nvc.c:351] using ldcache /etc/ld.so.cache
+I0830 06:50:37.438828 3850 nvc.c:352] using unprivileged user 1000:1000
+I0830 06:50:37.438844 3850 nvc.c:393] attempting to load dxcore to see if we are running under Windows Subsystem for Linux (WSL)
+I0830 06:50:37.439523 3850 dxcore.c:228] Creating a new WDDM Adapter for hAdapter:40000000 luid:73839b
+I0830 06:50:37.439801 3850 dxcore.c:269] Adding new adapter via dxcore hAdapter:40000000 luid:73839b wddm version:3100
+I0830 06:50:37.439819 3850 dxcore.c:326] dxcore layer initialized successfully
+W0830 06:50:37.440049 3850 nvc.c:405] skipping kernel modules load on WSL
+I0830 06:50:37.440129 3851 rpc.c:71] starting driver rpc service
+I0830 06:50:37.447723 3852 rpc.c:71] starting nvcgo rpc service
+I0830 06:50:37.448221 3850 nvc_info.c:798] requesting driver information with ''
+I0830 06:50:37.449904 3850 nvc_info.c:202] selecting /usr/lib/wsl/lib/libnvidia-opticalflow.so.1
+I0830 06:50:37.449925 3850 nvc_info.c:202] selecting /usr/lib/wsl/lib/libnvidia-ml.so.1
+I0830 06:50:37.449945 3850 nvc_info.c:202] selecting /usr/lib/wsl/lib/libnvidia-encode.so.1
+I0830 06:50:37.449965 3850 nvc_info.c:202] selecting /usr/lib/wsl/lib/libnvcuvid.so.1
+I0830 06:50:37.450009 3850 nvc_info.c:202] selecting /usr/lib/wsl/lib/libdxcore.so
+I0830 06:50:37.450027 3850 nvc_info.c:202] selecting /usr/lib/wsl/lib/libcudadebugger.so.1
+I0830 06:50:37.450042 3850 nvc_info.c:202] selecting /usr/lib/wsl/lib/libcuda.so.1
+W0830 06:50:37.450077 3850 nvc_info.c:402] missing library libnvidia-cfg.so
+W0830 06:50:37.450091 3850 nvc_info.c:402] missing library libnvidia-nscq.so
+W0830 06:50:37.450093 3850 nvc_info.c:402] missing library libnvidia-opencl.so
+W0830 06:50:37.450094 3850 nvc_info.c:402] missing library libnvidia-gpucomp.so
+W0830 06:50:37.450095 3850 nvc_info.c:402] missing library libnvidia-ptxjitcompiler.so
+W0830 06:50:37.450104 3850 nvc_info.c:402] missing library libnvidia-fatbinaryloader.so
+W0830 06:50:37.450106 3850 nvc_info.c:402] missing library libnvidia-allocator.so
+W0830 06:50:37.450107 3850 nvc_info.c:402] missing library libnvidia-compiler.so
+W0830 06:50:37.450116 3850 nvc_info.c:402] missing library libnvidia-pkcs11.so
+W0830 06:50:37.450118 3850 nvc_info.c:402] missing library libnvidia-pkcs11-openssl3.so
+W0830 06:50:37.450119 3850 nvc_info.c:402] missing library libnvidia-nvvm.so
+W0830 06:50:37.450123 3850 nvc_info.c:402] missing library libnvidia-ngx.so
+W0830 06:50:37.450127 3850 nvc_info.c:402] missing library libvdpau_nvidia.so
+W0830 06:50:37.450137 3850 nvc_info.c:402] missing library libnvidia-eglcore.so
+W0830 06:50:37.450139 3850 nvc_info.c:402] missing library libnvidia-glcore.so
+W0830 06:50:37.450141 3850 nvc_info.c:402] missing library libnvidia-tls.so
+W0830 06:50:37.450142 3850 nvc_info.c:402] missing library libnvidia-glsi.so
+W0830 06:50:37.450143 3850 nvc_info.c:402] missing library libnvidia-fbc.so
+W0830 06:50:37.450144 3850 nvc_info.c:402] missing library libnvidia-ifr.so
+W0830 06:50:37.450154 3850 nvc_info.c:402] missing library libnvidia-rtcore.so
+W0830 06:50:37.450156 3850 nvc_info.c:402] missing library libnvoptix.so
+W0830 06:50:37.450159 3850 nvc_info.c:402] missing library libGLX_nvidia.so
+W0830 06:50:37.450160 3850 nvc_info.c:402] missing library libEGL_nvidia.so
+W0830 06:50:37.450161 3850 nvc_info.c:402] missing library libGLESv2_nvidia.so
+W0830 06:50:37.450163 3850 nvc_info.c:402] missing library libGLESv1_CM_nvidia.so
+W0830 06:50:37.450175 3850 nvc_info.c:402] missing library libnvidia-glvkspirv.so
+W0830 06:50:37.450177 3850 nvc_info.c:402] missing library libnvidia-cbl.so
+W0830 06:50:37.450178 3850 nvc_info.c:406] missing compat32 library libnvidia-ml.so
+W0830 06:50:37.450179 3850 nvc_info.c:406] missing compat32 library libnvidia-cfg.so
+W0830 06:50:37.450180 3850 nvc_info.c:406] missing compat32 library libnvidia-nscq.so
+W0830 06:50:37.450182 3850 nvc_info.c:406] missing compat32 library libcuda.so
+W0830 06:50:37.450183 3850 nvc_info.c:406] missing compat32 library libcudadebugger.so
+W0830 06:50:37.450184 3850 nvc_info.c:406] missing compat32 library libnvidia-opencl.so
+W0830 06:50:37.450185 3850 nvc_info.c:406] missing compat32 library libnvidia-gpucomp.so
+W0830 06:50:37.450187 3850 nvc_info.c:406] missing compat32 library libnvidia-ptxjitcompiler.so
+W0830 06:50:37.450190 3850 nvc_info.c:406] missing compat32 library libnvidia-fatbinaryloader.so
+W0830 06:50:37.450200 3850 nvc_info.c:406] missing compat32 library libnvidia-allocator.so
+W0830 06:50:37.450203 3850 nvc_info.c:406] missing compat32 library libnvidia-compiler.so
+W0830 06:50:37.450206 3850 nvc_info.c:406] missing compat32 library libnvidia-pkcs11.so
+W0830 06:50:37.450216 3850 nvc_info.c:406] missing compat32 library libnvidia-pkcs11-openssl3.so
+W0830 06:50:37.450218 3850 nvc_info.c:406] missing compat32 library libnvidia-nvvm.so
+W0830 06:50:37.450219 3850 nvc_info.c:406] missing compat32 library libnvidia-ngx.so
+W0830 06:50:37.450220 3850 nvc_info.c:406] missing compat32 library libvdpau_nvidia.so
+W0830 06:50:37.450222 3850 nvc_info.c:406] missing compat32 library libnvidia-encode.so
+W0830 06:50:37.450223 3850 nvc_info.c:406] missing compat32 library libnvidia-opticalflow.so
+W0830 06:50:37.450225 3850 nvc_info.c:406] missing compat32 library libnvcuvid.so
+W0830 06:50:37.450226 3850 nvc_info.c:406] missing compat32 library libnvidia-eglcore.so
+W0830 06:50:37.450227 3850 nvc_info.c:406] missing compat32 library libnvidia-glcore.so
+W0830 06:50:37.450230 3850 nvc_info.c:406] missing compat32 library libnvidia-tls.so
+W0830 06:50:37.450232 3850 nvc_info.c:406] missing compat32 library libnvidia-glsi.so
+W0830 06:50:37.450234 3850 nvc_info.c:406] missing compat32 library libnvidia-fbc.so
+W0830 06:50:37.450238 3850 nvc_info.c:406] missing compat32 library libnvidia-ifr.so
+W0830 06:50:37.450240 3850 nvc_info.c:406] missing compat32 library libnvidia-rtcore.so
+W0830 06:50:37.450255 3850 nvc_info.c:406] missing compat32 library libnvoptix.so
+W0830 06:50:37.450256 3850 nvc_info.c:406] missing compat32 library libGLX_nvidia.so
+W0830 06:50:37.450258 3850 nvc_info.c:406] missing compat32 library libEGL_nvidia.so
+W0830 06:50:37.450259 3850 nvc_info.c:406] missing compat32 library libGLESv2_nvidia.so
+W0830 06:50:37.450261 3850 nvc_info.c:406] missing compat32 library libGLESv1_CM_nvidia.so
+W0830 06:50:37.450263 3850 nvc_info.c:406] missing compat32 library libnvidia-glvkspirv.so
+W0830 06:50:37.450277 3850 nvc_info.c:406] missing compat32 library libnvidia-cbl.so
+W0830 06:50:37.450279 3850 nvc_info.c:406] missing compat32 library libdxcore.so
+I0830 06:50:37.450292 3850 nvc_info.c:282] selecting /usr/lib/wsl/drivers/nv_dispi.inf_amd64_d3828c822366e497/nvidia-smi
+W0830 06:50:37.566503 3850 nvc_info.c:428] missing binary nvidia-debugdump
+W0830 06:50:37.566525 3850 nvc_info.c:428] missing binary nvidia-persistenced
+W0830 06:50:37.566527 3850 nvc_info.c:428] missing binary nv-fabricmanager
+W0830 06:50:37.566528 3850 nvc_info.c:428] missing binary nvidia-cuda-mps-control
+W0830 06:50:37.566530 3850 nvc_info.c:428] missing binary nvidia-cuda-mps-server
+I0830 06:50:37.566539 3850 nvc_info.c:445] skipping path lookup for dxcore
+I0830 06:50:37.566544 3850 nvc_info.c:561] listing device /dev/dxg
+W0830 06:50:37.566676 3850 nvc_info.c:352] missing ipc path /var/run/nvidia-persistenced/socket
+W0830 06:50:37.566695 3850 nvc_info.c:352] missing ipc path /var/run/nvidia-fabricmanager/socket
+W0830 06:50:37.566721 3850 nvc_info.c:352] missing ipc path /tmp/nvidia-mps
+I0830 06:50:37.566736 3850 nvc_info.c:854] requesting device information with ''
+I0830 06:50:37.573162 3850 nvc_info.c:726] listing dxcore adapter 0 (GPU-e1f55e56-2016-d918-7dd5-7cd29c440e50 at 00000000:08:00.0)
+NVRM version:   537.13
+CUDA version:   12.2
+
+Device Index:   0
+Device Minor:   0
+Model:          NVIDIA GeForce RTX 4090
+Brand:          GeForce
+GPU UUID:       GPU-e1f55e56-2016-d918-7dd5-7cd29c440e50
+Bus Location:   00000000:08:00.0
+Architecture:   8.9
+I0830 06:50:37.573218 3850 nvc.c:434] shutting down library context
+I0830 06:50:37.573284 3852 rpc.c:95] terminating nvcgo rpc service
+I0830 06:50:37.573643 3850 rpc.c:135] nvcgo rpc service terminated successfully
+I0830 06:50:37.574727 3851 rpc.c:95] terminating driver rpc service
+I0830 06:50:37.575873 3850 rpc.c:135] driver rpc service terminated successfully

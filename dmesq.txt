@@ -1,0 +1,30 @@
+       dmesg | grep 'docker'
+[   13.494303] eth0: renamed from docker0
+[   48.169976] docker0: port 1(veth0db5b92) entered blocking state
+[   48.169979] docker0: port 1(veth0db5b92) entered disabled state
+[   48.478544] docker0: port 1(veth0db5b92) entered blocking state
+[   48.478546] docker0: port 1(veth0db5b92) entered forwarding state
+[   48.478565] IPv6: ADDRCONF(NETDEV_CHANGE): docker0: link becomes ready
+[   48.787963] docker0: port 1(veth0db5b92) entered disabled state
+[   48.935677] docker0: port 1(veth0db5b92) entered disabled state
+[   48.935754] docker0: port 1(veth0db5b92) entered disabled state
+[   50.010354] docker0: port 1(veth0b1d4dc) entered blocking state
+[   50.010357] docker0: port 1(veth0b1d4dc) entered disabled state
+[   50.010435] docker0: port 1(veth0b1d4dc) entered blocking state
+[   50.010436] docker0: port 1(veth0b1d4dc) entered forwarding state
+[   50.010548] docker0: port 1(veth0b1d4dc) entered disabled state
+[   50.175049] docker0: port 2(veth55ad70d) entered blocking state
+[   50.175052] docker0: port 2(veth55ad70d) entered disabled state
+[   50.175103] docker0: port 2(veth55ad70d) entered blocking state
+[   50.175104] docker0: port 2(veth55ad70d) entered forwarding state
+[   50.175299] docker0: port 2(veth55ad70d) entered disabled state
+[   50.398617] docker0: port 1(veth0b1d4dc) entered blocking state
+[   50.398619] docker0: port 1(veth0b1d4dc) entered forwarding state
+[   50.508564] docker0: port 1(veth0b1d4dc) entered disabled state
+[   50.678541] docker0: port 2(veth55ad70d) entered blocking state
+[   50.678543] docker0: port 2(veth55ad70d) entered forwarding state
+[   50.695813] docker0: port 1(veth0b1d4dc) entered disabled state
+[   50.696008] docker0: port 1(veth0b1d4dc) entered disabled state
+[   54.855643] docker0: port 2(veth55ad70d) entered disabled state
+[   55.035729] docker0: port 2(veth55ad70d) entered disabled state
+[   55.035930] docker0: port 2(veth55ad70d) entered disabled state
